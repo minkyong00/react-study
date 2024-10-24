@@ -40,7 +40,12 @@ const User = ({user}) => {
   //   }
   // }
   // 3) 강남구의 사는 사람의 이름을 태그로 출력
-
+    // const userName = address.includes("강남구") ? (
+    //   <li>
+    //     이름 : {name}
+    //   </li>
+    // ) : <></>
+    
   // 4) 모든 핸드폰 번호를 010-1234-5678로 변경하기
     // const [userPhone, setUserPhone] = useState(phone);
     // const onClickToPhoneNumber = () => {
@@ -49,18 +54,29 @@ const User = ({user}) => {
 
   // 5) 장보고의 주소를 서울시 중랑구로 변경하기
   const [userAddress, setUserAddress] = useState(address);
-  console.log(userAddress)
+  const userJang = name.includes("장보고")
+  if(!userJang) {
+    <li>
+      {name}
+      {address}
+    </li>
+    return;
+  }
+  // console.log(userAddress)
   const onClickToAddress = () => {
     setUserAddress("서울시 중랑구")
   }
+  
 
   return (
     <ul>
       {/* {userAddress} */}
       {/* {userAge} */}
       {/* {printgangnamgu()} */}
+      {/* {userName} */}
       {/* {userPhone}
       <button onClick={onClickToPhoneNumber}>번호 변경</button> */}
+      {name} <br />
       {userAddress}
       <button onClick={onClickToAddress} >주소 변경</button>
     </ul>
