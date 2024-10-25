@@ -1,10 +1,10 @@
 import './App.css';
-import FoodContainer from './docs/ref/expert/FoodContainer';
+import FoodsContainer from './docs/ref/expert/FoodsContainer';
 
 function App() {
   return (
     <>
-        <FoodContainer />
+        <FoodsContainer />
     </>
   );
 }
