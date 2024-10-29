@@ -1,10 +1,10 @@
 import './App.css';
-import FoodsContainer from './docs/ref/expert/FoodsContainer';
+import SideEffect from './docs/life-cycle/function/SideEffect';
 
 function App() {
   return (
     <>
-        <FoodsContainer />
+        <SideEffect />
     </>
   );
 }

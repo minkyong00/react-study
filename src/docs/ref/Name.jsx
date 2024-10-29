@@ -9,7 +9,7 @@ const Name = () => {
   const onChangeToInput = (e) => {
     setResult(e.target.value)
   }
-
+  
   const onClickToSorryButton = () => {
     setResult(inputRef.current.value.replaceAll("님", "") + "님") 
   }
