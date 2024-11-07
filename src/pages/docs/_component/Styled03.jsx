@@ -28,7 +28,7 @@ const Styled03 = () => {
           {/* 회원가입을 버튼을 사용해보기 */}
           <BasicButton 
           type='button'
-          variant={"primary"}
+          variant={"sub"}
           size={"large"}
           shape={"small"}
           
