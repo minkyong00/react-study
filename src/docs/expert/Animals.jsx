@@ -7,6 +7,7 @@ import Animal from './Animal';
 // 동물 버튼을 클릭하면 해당 버튼을 삭제 (context 메서드를 remove 사용)
 const Animals = () => {
   
+  //consumer대신 사용
   const {state, actions} = useContext(AnimalsContext);
   console.log(actions)
   const [inputValue, setInputValue] = useState("");
@@ -19,13 +20,6 @@ const Animals = () => {
       actions.insert(inputValue)
     }
   }
-
-  // console.log(state.animals[0])
-  // const animalList = state.animals.map((animal, i) => (
-  //   <li key={i}>
-  //       <button onClick={() => { actions.remove(i) }}>{animal}</button>
-  //   </li>
-  // ))
 
   // Animal로 state와 actoin을 넘겨서 리스트로 화면에 출력하기
   return (

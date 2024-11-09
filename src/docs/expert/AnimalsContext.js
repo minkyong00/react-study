@@ -7,6 +7,7 @@ import React, { createContext, useState } from 'react';
 // 버튼을 눌렀을 때 삭제하는 remove라는 메서드 생성
 // 화면에서 동물을 입력 받았을 때 추가하는 insert라는 메서드 생성
 
+//초기화
 const AnimalsContext = createContext({
   state : { animals : [] },
   actions : { insert : () => {}, remove : () => {} }
