@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { decrease, increase } from '../../../modules/font';
 
 const FontButtonComponent = () => {
-  const font = useSelector((state) => state.font)
-  const fontSize = useSelector((state) => state.fontSize)
+  const font = useSelector((state) => state.font.font)
+  const fontSize = useSelector((state) => state.font.fontSize)
   // console.log(useSelector((state) => state))
   const dispatch = useDispatch();
 
